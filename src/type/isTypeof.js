@@ -1,15 +1,11 @@
 /**
- * @Description: type 类型判断
- * @author: oliver on 2021/3/9
- * @modify: oliver on 2021/3/9
- **/
-
-/**
- * 输入一个值,返回其数据类型
+ * 输入一个值,返回其数据类型（type 类型判断）
  * @Description: 全类型判断
  * @author: oliver on 2021/3/9
  * @modify: oliver on 2021/3/9
  * @link: https://www.cnblogs.com/onepixel/p/5126046.html
+ *
+ * @version：v.0.0.1
  *
  * @param { * } val => 传入需要判断的值
  *
