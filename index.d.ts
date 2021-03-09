@@ -1,108 +1,108 @@
 
 declare namespace outils {
   /**
-   * 
+   *
    * @desc 判断两个数组是否相等
-   * @param {Array} arr1 
-   * @param {Array} arr2 
+   * @param {Array} arr1
+   * @param {Array} arr2
    * @return {Boolean}
    */
   export function arrayEqual(arr1: Array<any>, arr2: Array<any>): boolean
-  
+
   /**
-   * 
+   *
    * @desc   为元素添加class
-   * @param  {HTMLElement} ele 
-   * @param  {String} cls 
+   * @param  {HTMLElement} ele
+   * @param  {String} cls
    */
   export function addClass(ele: HTMLElement, cls: string): void
-  
+
   /**
-   * 
+   *
    * @desc 判断元素是否有某个class
-   * @param {HTMLElement} ele 
-   * @param {String} cls 
+   * @param {HTMLElement} ele
+   * @param {String} cls
    * @return {Boolean}
    */
   export function hasClass(ele: HTMLElement, cls: string): boolean
- 
+
   /**
-   * 
+   *
    * @desc 为元素移除class
-   * @param {HTMLElement} ele 
-   * @param {String} cls 
+   * @param {HTMLElement} ele
+   * @param {String} cls
    */
   export function removeClass(ele: HTMLElement, cls: string): boolean
-  
+
   /**
-   * 
+   *
    * @desc 根据name读取cookie
-   * @param  {String} name 
+   * @param  {String} name
    * @return {String}
    */
   export function getCookie(name: string): string
 
   /**
-   * 
+   *
    * @desc 根据name删除cookie
-   * @param  {String} name 
+   * @param  {String} name
    */
   export function removeCookie(name: string): void
 
   /**
-   * 
+   *
    * @desc  设置Cookie
-   * @param {String} name 
-   * @param {String} value 
-   * @param {Number} days 
+   * @param {String} name
+   * @param {String} value
+   * @param {Number} days
    */
   export function setCookie(name: string, value: string, days: number): void
-  
+
   /**
-   * 
+   *
    * @desc 获取浏览器类型和版本
-   * @return {String} 
+   * @return {String}
    */
   export function getExplore(): string
- 
+
   /**
-   * 
+   *
    * @desc 获取操作系统类型
-   * @return {String} 
+   * @return {String}
    */
   export function getOS(): void
-  
+
   /**
-   * 
+   *
    * @desc 获取滚动条距顶部的距离
    */
   export function getScrollTop(): void
 
   /**
-   * 
+   *
    * @desc  获取一个元素的距离文档(document)的位置，类似jQ中的offset()
-   * @param {HTMLElement} ele 
+   * @param {HTMLElement} ele
    * @returns { {left: number, top: number} }
    */
   export function offset(ele: HTMLElement): { left: number, top: number }
-  
+
   /**
-   * 
+   *
    * @desc  在${duration}时间内，滚动条平滑滚动到${to}指定位置
-   * @param {Number} to 
-   * @param {Number} duration 
+   * @param {Number} to
+   * @param {Number} duration
    */
   export function scrollTo(to: number, duration: number): void
 
   /**
-   * 
+   *
    * @desc 设置滚动条距顶部的距离
    * @param {Number} value
    */
   export function setScrollTop(value: number): void
 
   /**
-   * 
+   *
    * @desc H5软键盘缩回、弹起回调
    * 当软件键盘弹起会改变当前 window.innerHeight，监听这个值变化
    * @param {Function} downCb 当软键盘弹起后，缩回的回调
@@ -111,7 +111,7 @@ declare namespace outils {
   export function windowResize(downCb: () => void, upCb: () => void): void
 
   /**
-   * @desc 函数防抖 
+   * @desc 函数防抖
    * 与throttle不同的是，debounce保证一个函数在多少毫秒内不再被触发，只会执行一次，
    * 要么在第一次调用return的防抖函数时执行，要么在延迟指定毫秒后调用。
    * @example 适用场景：如在线编辑的自动存储防抖。
@@ -125,7 +125,7 @@ declare namespace outils {
   * @return {Function} 新的防抖函数。
   */
   export function debounce(delay: number, atBegin?: boolean, callback?: () => void): void
-  
+
   /**
    * @desc   函数节流。
    * 适用于限制`resize`和`scroll`等函数的调用频率
@@ -146,7 +146,7 @@ declare namespace outils {
 
   /**
    * @desc 根据keycode获得键名
-   * @param  {Number} keycode 
+   * @param  {Number} keycode
    * @return {String}
    */
   export function getKeyName(keycode: number): string
@@ -157,9 +157,9 @@ declare namespace outils {
    * @return {Any}
    */
   export function deepClone(values: any): any
-  
+
   /**
-   * 
+   *
    * @desc   判断`obj`是否为空
    * @param  {Object} obj
    * @return {Boolean}
@@ -167,93 +167,93 @@ declare namespace outils {
   export function isEmptyObject(obj: object): boolean
 
   /**
-   * 
+   *
    * @desc 随机生成颜色
-   * @return {String} 
+   * @return {String}
    */
   export function randomColor(): string
 
   /**
-   * 
+   *
    * @desc 生成指定范围[min, max]的随机数
-   * @param  {Number} min 
-   * @param  {Number} max 
-   * @return {Number} 
+   * @param  {Number} min
+   * @param  {Number} max
+   * @return {Number}
    */
   export function randomNum(min: number, max: number): number
 
   /**
-   * 
+   *
    * @desc 判断是否为16进制颜色，rgb 或 rgba
    * @param  {String}  str
-   * @return {Boolean} 
+   * @return {Boolean}
    */
   export function isColor(str: string): boolean
- 
+
   /**
-   * 
+   *
    * @desc   判断是否为邮箱地址
    * @param  {String}  str
-   * @return {Boolean} 
+   * @return {Boolean}
    */
   export function isEmail(str: string): boolean
- 
+
   /**
-   * 
+   *
    * @desc  判断是否为身份证号
-   * @param  {String|Number} str 
+   * @param  {String|Number} str
    * @return {Boolean}
    */
   export function isIdCard(str: string | number): boolean
- 
+
   /**
-   * 
+   *
    * @desc   判断是否为手机号
-   * @param  {String|Number} str 
-   * @return {Boolean} 
+   * @param  {String|Number} str
+   * @return {Boolean}
    */
   export function isPhoneNum(str: string | number): boolean
- 
+
   /**
-   * 
+   *
    * @desc   判断是否为URL地址
-   * @param  {String} str 
+   * @param  {String} str
    * @return {Boolean}
    */
   export function isUrl(str: string): boolean
 
   /**
-   * 
+   *
    * @desc   现金额转大写
-   * @param  {Number} n 
+   * @param  {Number} n
    * @return {String}
    */
   export function digitUppercase(n: number): string
 
   /**
-   * 
+   *
    * @desc 判断浏览器是否支持webP格式图片
-   * @return {Boolean} 
+   * @return {Boolean}
    */
   export function isSupportWebP(): boolean
 
   /**
    * @desc   格式化${startTime}距现在的已过时间
-   * @param  {Date} startTime 
+   * @param  {Date} startTime
    * @return {String}
    */
   export function formatPassTime(startTime: Date): string
 
   /**
-   * 
+   *
    * @desc   格式化现在距${endTime}的剩余时间
-   * @param  {Date} endTime  
+   * @param  {Date} endTime
    * @return {String}
    */
   export function formatRemainTime(endTime: Date): string
 
   /**
-   * 
+   *
    * @desc 是否为闰年
    * @param {Number} year
    * @returns {Boolean}
@@ -262,7 +262,7 @@ declare namespace outils {
 
   /**
    * @desc   判断是否为同一天
-   * @param  {Date} date1 
+   * @param  {Date} date1
    * @param  {Date} date2 可选／默认值：当天
    * @return {Boolean}
    */
@@ -274,7 +274,7 @@ declare namespace outils {
   * @return {Number}
   */
   export function monthDays(date: Date): number
-  
+
   /**
    * @desc ${startTime - endTime}的剩余时间,startTime大于endTime时，均返回0
    * @param { Date | String } startTime
@@ -284,17 +284,17 @@ declare namespace outils {
   export function timeLeft(startTime: Date | string, endTime: Date | string): { d: number, h: number, m: number, s: number }
 
   /**
-   * 
+   *
    * @desc   url参数转对象
    * @param  {String} url  default: window.location.href
-   * @return {Object} 
+   * @return {Object}
    */
   export function parseQueryString(url?: URL): object
-  
+
   /**
-   * 
+   *
    * @desc   对象序列化
-   * @param  {Object} obj 
+   * @param  {Object} obj
    * @return {String}
    */
   export function stringfyQueryString(obj: object): string
