@@ -49,6 +49,6 @@
  *        let m = window;
  *        isTypeof(m); => [ global ] window 是全局对象 global 的引用
  */
-export default function isTypeof (val) {
+export function isTypeof (val) {
   return Object.prototype.toString.call(val).slice(8, -1);
 }

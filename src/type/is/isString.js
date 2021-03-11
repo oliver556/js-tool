@@ -12,6 +12,6 @@
  *        let a = '';
  *        isTypeof(a); => [ String ]
  */
-export default function isString (val) {
+export function isString (val) {
   return Object.prototype.toString.call(val).slice(8, -1) === 'String';
 }
