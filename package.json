@@ -1,6 +1,6 @@
 {
-  "name": "@susu/js-tool",
-  "version": "0.0.6",
+  "name": "@susu/stool",
+  "version": "1.0.1",
   "description": "🚀 前端业务代码工具库",
   "scripts": {
     "test": "jest",
@@ -9,7 +9,7 @@
     "coverage": "jest --coverage"
   },
   "keywords": [],
-  "author": "",
+  "author": "oliver",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.12.10",
@@ -24,5 +24,6 @@
   "module": "dist/esm/index.js",
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {}
 }

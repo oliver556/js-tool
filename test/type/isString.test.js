@@ -1,4 +1,4 @@
-import { isString } from '../src';
+import { isString } from '../../src';
 
 let a = '300';
 test('String 类型判断',()=>{

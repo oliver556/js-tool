@@ -1,4 +1,4 @@
-import { isTypeof } from '../src';
+import { isTypeof } from '../../src';
 
 test('String 类型判断',()=>{
   expect(isTypeof('10')).toBe('String');

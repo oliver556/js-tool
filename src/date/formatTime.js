@@ -6,15 +6,15 @@
  *
  * @version：v.0.0.1
  *
- * @param  { Date | Number } time => 时间
+ * @param  { Date | Number | String } time => 时间
  * @param  { String } cFormat => 格式
  *
  * @return { String } => timeStr => 格式化后的字符串
  *
  * @example
- *       formatTime('2018-1-29', '{y}/{M}/{d} {h}:{m}:{s}'); => [ 2018/01/29 00:00:00 ]
+ *       formatTime('2018-1-29', '{y}/{m}/{d} {h}:{i}:{s}'); => [ 2018/01/29 00:00:00 ]
  */
-export default function formatTime (time, cFormat) {
+export default function formatTime(time, cFormat) {
   if (arguments.length === 0) return null
   if ((time + '').length === 10) {
     time = +time * 1000
