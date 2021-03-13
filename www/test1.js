@@ -1,3 +1,2 @@
-const myLibrary = require("../dist/cjs/index.js");
-myLibrary.hello(); // hello
-myLibrary.goodbye(); // goodbye
+// const stool = require('../dist/@susu/stool.min.js')
+// console.log(stool.isString());
