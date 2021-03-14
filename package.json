@@ -1,6 +1,6 @@
 {
   "name": "@susu/stool",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "🚀 前端业务代码工具库",
   "scripts": {
     "test": "jest",
