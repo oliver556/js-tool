@@ -15,7 +15,7 @@
  *        let b = 200';
  *        digitUppercase(a); => [ '贰佰元整' ]
  */
-export function digitUppercase(val) {
+export function sDigitUppercase (val) {
   let i;
   let fraction = ['角', '分'];
   let digit = [

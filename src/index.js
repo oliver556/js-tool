@@ -109,17 +109,26 @@ export {
 // --------------------------------------------------------------------------------
 
 // 阿拉伯金额转大写
-import { digitUppercase } from './string/digitUppercase';
+import { sDigitUppercase } from './string/sDigitUppercase';
 // 去除空格
 import { sTrim } from "./string/sTrim";
 // 字符串转换
 import { sChangeCase } from "./string/sChangeCase";
+// 字符串循环复制
+import { sRepeatStr } from "./string/sRepeatStr";
+// 获取 url 中的参数
+import { sGetUrlParameter } from "./string/sGetUrlParameter";
+// 到某一个时间的倒计时
+import { sGetEndTime } from "./string/sGetEndTime";
 
 // 导出
 export {
   sTrim,
   sChangeCase,
-  digitUppercase
+  sDigitUppercase,
+  sRepeatStr,
+  sGetUrlParameter,
+  sGetEndTime
 }
 // --------------------------------------------------------------------------------
 //
