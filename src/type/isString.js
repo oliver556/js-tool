@@ -1,5 +1,5 @@
 /**
- * 输入一个值,返回其数据类型
+ * 是否字符串
  * @Description: 是否字符串
  * @author: oliver on 2021/3/9
  * @modify: oliver on 2021/3/9

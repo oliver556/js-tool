@@ -3,10 +3,11 @@ import { terser } from "rollup-plugin-terser";
 import babel from "@rollup/plugin-babel";
 import pkg from "./package.json";
 // const input = ["src/index.js"];
+const input = ["../js-tool/src/index.js"];
 export default [
   {
     // UMD
-    // input,
+    input,
     plugins: [
       nodeResolve(),
       babel({
@@ -25,7 +26,7 @@ export default [
   },
 // ESM and CJS
   {
-    // input,
+    input,
     plugins: [nodeResolve()],
     output: [
       {
