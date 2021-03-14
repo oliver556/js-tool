@@ -10,8 +10,8 @@
  *
  * @example
  *        let a = '2021/03/14 20:00:00';
- *        当前时间：Sun Mar 14 2021 19:42:36 GMT+0800 (中国标准时间)
- *        sGetEndTime(a); => [ '剩余时间: 0天 0小时 17分钟 23秒' ]
+ *        当前时间：'Sun Mar 14 2021 19:30:00 GMT+0800 (中国标准时间)'
+ *        sGetEndTime(a); => [ '剩余时间: 0天 0小时 30分钟 00秒' ]
  */
 
 export function sGetEndTime (endTime) {
