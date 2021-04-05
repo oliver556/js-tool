@@ -12,6 +12,7 @@
  *        let a = new Date()';
  *        isDate(a); => [ true ]
  */
+
 export function isDate (val) {
   return Object.prototype.toString.call(val).slice(8, -1) === 'Date';
 }

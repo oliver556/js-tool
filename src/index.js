@@ -139,7 +139,7 @@ export {
  * @version
  */
 
-// type 类型判断
+// 获取类型
 import { getTypeof } from './type/getTypeof';
 // 判断类型 String
 import { isString } from './type/isString';
@@ -147,6 +147,8 @@ import { isString } from './type/isString';
 import { isNumber } from './type/isNumber';
 // 判断类型 Boolean
 import { isBoolean } from "./type/isBoolean";
+// 判断类型 Object
+import { isObject } from "./type/isObject";
 // 判断类型 Symbol
 import { isSymbol } from "./type/isSymbol";
 // 判断类型 Undefined
@@ -163,14 +165,21 @@ import { isArray } from "./type/isArray";
 import { isRegExp } from "./type/isRegExp";
 // 判断类型 Error
 import { isError } from "./type/isError";
+// 判断元素 是否为空
+import { isEmpty } from "./type/isEmpty";
+// 判断是否为 iOS设备
+import { isIos } from "./type/isIos";
+// 判断 是否为PC端
+import { isPC } from "./type/isPC";
+// 获取 浏览器类型
+import { getBrowserType } from "./type/getBrowserType";
 
-
-// 函数方法导出
 export {
   getTypeof,
   isString,
   isNumber,
   isBoolean,
+  isObject,
   isSymbol,
   isUndefined,
   isNull,
@@ -178,5 +187,9 @@ export {
   isDate,
   isArray,
   isRegExp,
-  isError
+  isError,
+  isEmpty,
+  isIos,
+  isPC,
+  getBrowserType
 }
