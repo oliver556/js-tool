@@ -1,8 +1,8 @@
 /**
  * 到某一个时间的倒计时
  * @Description: 到某一个时间的倒计时
- * @author: oliver on 2021/3/14
- * @modify: oliver on 2021/3/14
+ * @author: JamisonLee on 2021/3/14
+ * @modify: JamisonLee on 2021/3/14
  *
  * @param { String | Number } endTime => 结束的时间点
  *

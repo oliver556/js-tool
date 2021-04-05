@@ -1,9 +1,12 @@
 /**
  * @Description: 获取操作系统类型
- * @author: oliver on 2021/3/13
- * @modify: oliver on 2021/3/13
+ * @author: JamisonLee on 2021/3/13
+ * @modify: JamisonLee on 2021/3/13
  *
  * @return { String } => 系统操作类型
+ *
+ * @example
+ *        getOS(); => [ MacOSX ]
  **/
 export function getOS() {
   let userAgent = 'navigator' in window && 'userAgent' in navigator && navigator.userAgent.toLowerCase() || '';

@@ -1,6 +1,6 @@
 import { isString } from '../../src';
 
 let a = '300';
-test('String 类型判断',()=>{
+test('判断类型 String',()=>{
   expect(isString(a)).toBe(true);
 })

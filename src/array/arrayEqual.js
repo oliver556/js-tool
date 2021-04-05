@@ -1,8 +1,8 @@
 /**
  * 判断两个数组是否相等
  * @Description: 两个数组是否相等
- * @author: oliver on 2021/3/12
- * @modify: oliver on 2021/3/12
+ * @author: JamisonLee on 2021/3/12
+ * @modify: JamisonLee on 2021/3/12
  *
  * @version：v.0.0.1
  *

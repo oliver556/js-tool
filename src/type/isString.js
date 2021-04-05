@@ -1,16 +1,16 @@
 /**
- * 是否字符串
- * @Description: 是否字符串
- * @author: oliver on 2021/3/9
- * @modify: oliver on 2021/3/9
+ * 判断类型 String
+ * @Description: 判断类型 String
+ * @author: JamisonLee on 2021/3/9
+ * @modify: JamisonLee on 2021/3/9
  *
  * @version：v.0.0.1
  *
- * @param { String } val => 需要检测类型的值
+ * @param { any } val => 需要检测类型的值
  *
  * @example
- *        let a = '';
- *        isTypeof(a); => [ String ]
+ *        let a = '300';
+ *        isString(a); => [ true ]
  */
 export function isString (val) {
   return Object.prototype.toString.call(val).slice(8, -1) === 'String';

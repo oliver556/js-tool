@@ -1,10 +1,10 @@
 /**
  * @Description: 写入 localStorage
- * @author: oliver on 2021/3/14
- * @modify: oliver on 2021/3/14
+ * @author: JamisonLee on 2021/3/14
+ * @modify: JamisonLee on 2021/3/14
  *
- * @param { String } key => localStorage 要保存的名称
- * @param { String, Number } val => localStorage 要保存的值
+ * @param { String } key => 要保存的名称
+ * @param { String, Number } val => 要保存的值
  *
  * @example
  *        写入 localStorage，key 为 test，value 为 'value is test'

@@ -1,8 +1,8 @@
 /**
  * 字符转换
  * @Description: 字符转换
- * @author: oliver on 2021/3/14
- * @modify: oliver on 2021/3/14
+ * @author: JamisonLee on 2021/3/14
+ * @modify: JamisonLee on 2021/3/14
  *
  * @param { String } str => 要转换的 String
  * @param { Number } type => 1:只有首字母大写，其余反之 2：只有首字母小写，其余反之 3：大小写转换 4：全部大写 5：全部小写

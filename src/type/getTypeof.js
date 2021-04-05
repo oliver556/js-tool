@@ -1,8 +1,8 @@
 /**
  * 输入一个值,返回其数据类型（type 类型判断）
  * @Description: 全类型判断
- * @author: oliver on 2021/3/9
- * @modify: oliver on 2021/3/9
+ * @author: JamisonLee on 2021/3/9
+ * @modify: JamisonLee on 2021/3/9
  * @link: https://www.cnblogs.com/onepixel/p/5126046.html
  *
  * @version：v.0.0.1
@@ -49,6 +49,6 @@
  *        let m = window;
  *        isTypeof(m); => [ global ] window 是全局对象 global 的引用
  */
-export function isTypeof (val) {
+export function getTypeof (val) {
   return Object.prototype.toString.call(val).slice(8, -1);
 }

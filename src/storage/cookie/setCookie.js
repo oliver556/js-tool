@@ -1,11 +1,11 @@
 /**
  * @Description: 写入 cookie
- * @author: oliver on 2021/3/14
- * @modify: oliver on 2021/3/14
+ * @author: JamisonLee on 2021/3/14
+ * @modify: JamisonLee on 2021/3/14
  *
- * @param { String } name => cookie 要保存的名称
- * @param { String, Number } value => cookie 要保存的值
- * @param { String | Number } day => cookie 要保存的时间
+ * @param { String } name => 要保存的名称
+ * @param { String, Number } value => 要保存的值
+ * @param { String | Number } day => 要保存的时间
  *
  * @example
  *        写入cookie，key 为 test，value 为 'value is test'，时间为 1天

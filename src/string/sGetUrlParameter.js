@@ -1,10 +1,10 @@
 /**
  * 获取 url 中的参数
  * @Description: 获取 url 中的参数
- * @author: oliver on 2021/3/14
- * @modify: oliver on 2021/3/14
+ * @author: JamisonLee on 2021/3/14
+ * @modify: JamisonLee on 2021/3/14
  *
- * @param { String } url => url 路径
+ * @param { String } url => url 路径 (没有传，值便为当前地址栏URL)
  *
  * @example
  *        let a = 'https://segmentfault.com/write?draftId=12200232342348&query=hello';

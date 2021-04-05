@@ -1,62 +1,61 @@
 /**
  * @Description: 集合导出所有函数工具类
- * @author: oliver on 2021/3/9
- * @modify: oliver on 2021/3/9
+ * @author: JamisonLee on 2021/3/9
+ * @modify: JamisonLee on 2021/3/9
  */
 
 /**
- * @Description: 引入 类型判断 封装函数
- * @author: oliver on 2021/3/9
- * @version
+ * @Description: 引入 数组类型 封装函数
+ * @author: JamisonLee on 2021/3/12
+ * @modify: JamisonLee on 2021/3/12
  */
-// --------------------------------------------------------------------------------
 
-// type 类型判断
-import { isTypeof } from './type/isTypeof';
-// type String 字符串判断
-import { isString } from './type/isString';
+// 判断两个数组是否相等
+import { arrayEqual } from "./array/arrayEqual";
+// 一维数组数组排序
+import { arraySort } from './array/arraySort';
 
-// 函数方法导出
 export {
-  isTypeof,
-  isString
+  arrayEqual,
+  arraySort
 }
+
 // --------------------------------------------------------------------------------
-//
 
+/**
+ * @Description: Date
+ * @author: JamisonLee on 2021/3/9
+ * @modify: JamisonLee on 2021/3/9
+ */
 
+// 格式化时间
+export { default as formatTime } from  './date/formatTime';
 
+// --------------------------------------------------------------------------------
 
 /**
  * @Description: 引入 设备类获取 封装函数
- * @author: oliver on 2021/3/13
- * @modify: oliver on 2021/3/13
+ * @author: JamisonLee on 2021/3/13
+ * @modify: JamisonLee on 2021/3/13
  */
-// --------------------------------------------------------------------------------
 
 // 获取浏览器类型和版本
 import { getExplore } from "./device/getExplore";
 // 获取操作系统类型
 import { getOS } from "./device/getOS";
 
-// 导出
 export {
   getExplore,
   getOS
 }
+
 // --------------------------------------------------------------------------------
-//
-
-
-
 
 /**
  * @Description: 引入 storage 封装函数
- * @author: oliver on 2021/3/14
- * @modify: oliver on 2021/3/14
+ * @author: JamisonLee on 2021/3/14
+ * @modify: JamisonLee on 2021/3/14
  */
-// --------------------------------------------------------------------------------
-//
 
 // 写入 cookie
 import { setCookie } from './storage/cookie/setCookie';
@@ -81,7 +80,6 @@ import { removeSession } from "./storage/sessionStorage/removeSession";
 // 移除所有 sessionStorage
 import { clearSession } from "./storage/sessionStorage/clearSession";
 
-// 导出
 export {
   setCookie,
   getCookie,
@@ -95,18 +93,15 @@ export {
   removeSession,
   clearSession
 }
+
 // --------------------------------------------------------------------------------
-//
-
-
 
 
 /**
  * @Description: 引入 string 封装函数
- * @author: oliver on 2021/3/13
- * @modify: oliver on 2021/3/13
+ * @author: JamisonLee on 2021/3/13
+ * @modify: JamisonLee on 2021/3/13
  */
-// --------------------------------------------------------------------------------
 
 // 阿拉伯金额转大写
 import { sDigitUppercase } from './string/sDigitUppercase';
@@ -120,50 +115,68 @@ import { sRepeatStr } from "./string/sRepeatStr";
 import { sGetUrlParameter } from "./string/sGetUrlParameter";
 // 到某一个时间的倒计时
 import { sGetEndTime } from "./string/sGetEndTime";
+// 根据位置,使用 * 遮蔽字符串
+import { sMask } from "./string/sMark";
+// 生成一个随机的十六进制颜色代码
+import { sRandomHexColorCode } from "./string/sRandomHexColorCode";
 
-// 导出
 export {
   sTrim,
   sChangeCase,
   sDigitUppercase,
   sRepeatStr,
   sGetUrlParameter,
-  sGetEndTime
+  sGetEndTime,
+  sMask,
+  sRandomHexColorCode
 }
+
 // --------------------------------------------------------------------------------
-//
-
-
-
 
 /**
- * @Description: 引入 数组类型 封装函数
- * @author: oliver on 2021/3/12
- * @modify: oliver on 2021/3/12
+ * @Description: 引入 类型判断 封装函数
+ * @author: JamisonLee on 2021/3/9
+ * @version
  */
-// --------------------------------------------------------------------------------
-//
-// 判断两个数组是否相等
-import { arrayEqual } from "./array/arrayEqual";
-// 一维数组数组排序
-import { arraySort } from './array/arraySort';
 
-// 导出
+// type 类型判断
+import { getTypeof } from './type/getTypeof';
+// 判断类型 String
+import { isString } from './type/isString';
+// 判断类型 Number
+import { isNumber } from './type/isNumber';
+// 判断类型 Boolean
+import { isBoolean } from "./type/isBoolean";
+// 判断类型 Symbol
+import { isSymbol } from "./type/isSymbol";
+// 判断类型 Undefined
+import { isUndefined } from "./type/isUndefined";
+// 判断类型 Null
+import { isNull } from "./type/isNull";
+// 判断类型 Function
+import { isFunction } from "./type/isFunction";
+// 判断类型 Date
+import { isDate } from "./type/isDate";
+// 判断类型 Array
+import { isArray } from "./type/isArray";
+// 判断类型 RegExp
+import { isRegExp } from "./type/isRegExp";
+// 判断类型 Error
+import { isError } from "./type/isError";
+
+
+// 函数方法导出
 export {
-  arrayEqual,
-  arraySort
+  getTypeof,
+  isString,
+  isNumber,
+  isBoolean,
+  isSymbol,
+  isUndefined,
+  isNull,
+  isFunction,
+  isDate,
+  isArray,
+  isRegExp,
+  isError
 }
-// --------------------------------------------------------------------------------
-//
-
-
-
-
-/**
- * @Description: Date
- * @author: oliver on 2021/3/9
- * @modify: oliver on 2021/3/9
- */
-
-// 格式化时间
-export { default as formatTime } from  './date/formatTime';

@@ -1,7 +1,7 @@
 /**
  * @Description: 移除所有 sessionStorage
- * @author: oliver on 2021/3/14
- * @modify: oliver on 2021/3/14
+ * @author: JamisonLee on 2021/3/14
+ * @modify: JamisonLee on 2021/3/14
  */
 
 export function clearSession() {

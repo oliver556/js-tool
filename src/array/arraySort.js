@@ -1,7 +1,7 @@
 /**
  * @Description: 数组值大小排序,(仅支持一维数组)
- * @author: oliver on 2021/3/13
- * @modify: oliver on 2021/3/13
+ * @author: JamisonLee on 2021/3/13
+ * @modify: JamisonLee on 2021/3/13
  *
  * @param { Array } arr => 要排序的数组
  * @param { Number } type => 1：从小到大   2：从大到小   3：随机
